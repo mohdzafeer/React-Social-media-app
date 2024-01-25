@@ -1,38 +1,214 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background-color: slateblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  height: 70px;
+  margin-bottom: 2px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  font-size: large;
+  margin: 5px;
+}
+.linkinlink {
+  text-align: center;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+.linkinlink:hover{
+  color: black;
+
+}
+.linkinlink .a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 10px;
+  text-decoration: none;
+}
+.linkinlink .a:hover {
+  cursor: pointer;
+  
+}
+.navbar .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.user p {
+  font-size: 15px;
+  margin-right: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.user img {
+  font-size: 15px;
+  border-radius: 50%;
+  border: solid black 2px;
+  filter: drop-shadow(0 0 0.75rem #4285f4);
+}
+
+.navbar .logoutbtn {
+  background-color: #4285f4;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  font-family: "Roboto";
+  margin: 10px;
+}
+.navbar .logoutbtn:hover {
+  cursor: pointer;
+}
+
+.createpost {
+  background-color: slateblue;
+  /* width: 50vw; */
+  padding: 5px;
+  /* border-radius: 10px; */
+  /* height: 30vw; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.para {
+  border-radius: 5px;
+}
+.title {
+  padding: 5px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(179, 212, 246);
+  width: 40vw;
+  margin: 10px;
+}
+.description {
+  padding: 5px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: rgb(179, 212, 246);
+  height: 50px;
+  width: 40vw;
+  margin: 10px;
+}
+.submit {
+  background-color: #4285f4;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  font-family: "Roboto";
+  margin: 10px;
+}
+.submit:hover {
+  cursor: pointer;
+}
+.entry {
+  display: flex;
+}
+
+.loginbtn {
+  background-color: #4285f4;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  font-family: "Roboto";
+}
+.loginbtn:hover {
+  cursor: pointer;
+}
+
+.allposts{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.post{
+  background-color: skyblue;
+  /* padding: 10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postusername{
+  display: flex;
+  border: solid black 1px;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+}
+
+.desrciptionOnMain{
+  display: flex;
+  padding: 10px;
+  align-items: start;
+}
+
+.titleOnMain{
+  text-decoration: underline;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.likebtn{
+  text-decoration: none;
+  background-color: #4285f4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: dotted white;
+  font-weight: bold;
+  font-size:large;
+  transition: all;
+  transition: 0.2s;
+}
+.likebtn:hover{
+  cursor: pointer;
+  background-color: rgb(16, 68, 226);
+  font-weight: bold;
+  /* font-size: x-large; */
+  transform: scale(1.2);
+}
+
+.likes{
+  font-weight: bold;
+  color: #4285f4;
 }
